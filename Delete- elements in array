@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    int ar[10];
+    int i,size,pos;
+    printf("Enter the size of array\n");
+    scanf("%d",&size);
+    
+    for(i=0;i<size;i++)
+    {
+        printf("Enter the number\n");
+        scanf("%d",&ar[i]);
+    }
+    
+    printf("Enter the index position to be delete\n");
+    scanf("%d",&pos);
+    for(i=pos;i<size;i++){
+        ar[i]=ar[i+1];
+    }
+    for(i=0;i<size-1;i++)
+    {
+        printf("%d\n",ar[i]);
+    }
+}
